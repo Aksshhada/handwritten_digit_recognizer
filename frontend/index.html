@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Handwritten Digit Recognizer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+  <h1 class="text-3xl font-bold mb-6">Handwritten Digit Recognizer</h1>
+
+  <canvas id="canvas" width="280" height="280" class="border-2 border-black bg-white mb-4"></canvas>
+
+  <div class="flex gap-4 mb-4">
+    <button onclick="clearCanvas()" class="px-4 py-2 bg-yellow-400 hover:bg-yellow-500 rounded">Clear</button>
+    <button onclick="predictDigit()" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded">Predict</button>
+  </div>
+
+  <p id="result" class="text-xl font-semibold"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
